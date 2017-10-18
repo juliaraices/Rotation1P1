@@ -1,0 +1,19 @@
+## ignore logs and related
+*.log
+*.output
+*.swp
+
+## ignore Rhistory
+.Rhistory
+
+# ignore files:
+*.pdf
+*.jpg
+*.png
+*.txt
+*.odp
+*.xlsx
+*.xls
+*.doc
+*.docx
+*.gz
