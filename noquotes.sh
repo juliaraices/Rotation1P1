@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 #script to remove quotation marks from files made with julia
 
