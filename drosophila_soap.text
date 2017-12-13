@@ -1,0 +1,37 @@
+#maximal read length
+max_rd_len=101
+[LIB]
+#maximal read length in this lib
+rd_len_cutof=101
+#average insert size
+avg_ins=90
+#if sequence needs to be reversed 
+reverse_seq=0
+#in which part(s) the reads are used
+asm_flags=3
+#minimum aligned length to contigs for a reliable read location (at least 32 for short insert size)
+map_len=32
+#fastq file for 1st file
+q1=SRR1571030_1_paired.fastq
+q2=SRR1571030_2_paired.fastq
+# 2nd file
+q1=SRR1571085_1_paired.fastq
+q2=SRR1571085_2_paired.fastq
+#3rd file
+q1=SRR1571147_1_paired.fastq
+q2=SRR1571147_2_paired.fastq
+#4th file
+q1=SRR1571155_1_paired.fastq
+q2=SRR1571155_2_paired.fastq
+#5th file
+q1=SRR1571157_1_paired.fastq
+q2=SRR1571157_2_paired.fastq
+#6th file
+q1=SRR1571159_1_paired.fastq
+q2=SRR1571159_2_paired.fastq
+#7th file
+q1=SRR1571160_1_paired.fastq
+q2=SRR1571160_2_paired.fastq
+#8th file
+q1=SRR1571161_1_paired.fastq
+q2=SRR1571161_2_paired.fastq
