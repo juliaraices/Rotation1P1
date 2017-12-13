@@ -10,8 +10,11 @@
 
 export LC_ALL=C
 
+#make data base from C capitata
+srun --cpu_bind=verbose makeblastdb -in ../Ccap01172013-genome.fa -dbtype 'nucl' -out CcapDB
+
 # run blast for interest genes and Ccapitata scaffolds
-srun --cpu_bind=verbose tblastx -db interestgenesDB -query ../Ccap01172013-genome.fa -outfmt 7 -max_target_seqs 1 -num_threads 16 -evalue 1e-10 -max_hsps 1 -out Dmel_Ccap.BLAST
+srun --cpu_bind=verbose tblastx -db CcapDB -query interest.sorted.longestCDS -outfmt 7 -max_target_seqs 1 -num_threads 16 -evalue 1e-10 -max_hsps 1 -out Dmel_Ccap.BLAST
 
 # get only the hits and ignore were there were no hits
 srun --cpu_bind=verbose grep -v "#" Dmel_Ccap.BLAST | sort -k 2 >Dmel_Ccap_onlyhits.BLAST
