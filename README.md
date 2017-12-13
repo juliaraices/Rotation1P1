@@ -31,8 +31,7 @@ After that the data was trimed for quality, and finally assembled so that RNAseq
     as were the *drosophila#.sh* scripts.
 
 After this steps to get the expression the R scripts to check which D. melanogaster cell cycle better correlates to the stages
-    of B. jarvisi and B. oleae embryogenesis. After this the interest genes were analysed to see if their expression changed or
-    not from D. melanogaster to B. jarvisi/oleae. Graphics were produces for all steps.
+    of B. jarvisi and B. oleae embryogenesis. After this the interest genes were analysed (scripts: analysis.R , analyses_relative.R , analysis_extra.R , analysis_relative_extra.R , bootstrap.R , bootstrap_extra.R) to see if their expression changed or not from D. melanogaster to B. jarvisi/oleae. Graphics were produces for all steps.
 
 
 ## Part 3
