@@ -6,9 +6,13 @@
 #SBATCH --mail-user=julia.raices@ist.ac.at
 #SBATCH --mail-type=ALL
 
+<<<<<<< HEAD
 export LC_ALL=C
 
 srun --cpu_bind=verbose ./blat -t=dnax -q=dnax -minScore=50 Ccap01172013-genome.fa dmel-all-CDS-r6.18_clean.sorted.longestCDS3 Dmel_vs_Ccap.blat
+=======
+srun --cpu_bind=verbose ./blat -t=dnax -q=dnax -minScore=50 dmel-all-CDS-r6.18_clean.sorted.longestCDS3 Ccap01172013-genome.fa Dmel_vs_Ccap.blat
+>>>>>>> a31fe549af1d22f66e8a7f22941d79ad3a5e4c21
 # runs blat comparing translated proteins to translated proteins from two dna samples
 
 #first let's make sure that each transcript only maps to a single reference gene
