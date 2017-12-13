@@ -43,5 +43,8 @@ The scripts download the data for scaffolds from C.capitata, use BLAT to find th
     used as proxy for the Muller elements). And create a table were each gene has its location in C. cpaitata and in 
     D. melanogaster.
 
+To make sure the chromosomes were corectly assigned for the interest genes we used blat to find the D. melanogaster genes in the C. capitata genome.
+For that scripts *capitata_extra.sh* and *capitata_extra2.sh* were used. Between those steps we manually selected the best hits for the interest genes considering identity percentage, coverage, and bit score.
+
 Finally, the R script *locations.R* was used to verify the locations of the interest genes in D. melanogaster and
     C. capitata.
